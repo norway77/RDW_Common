@@ -1,0 +1,75 @@
+{
+ "Content": "assessment",
+ "Identification": {
+  "Guid": "SBAC-IAB-EDITING-ELA-4",
+  "Type": "INTERIM ASSESSMENT BLOCKS",
+  "Year": "2016",
+  "Period": "2016",
+  "Version": "V1",
+  "Subject": "ELA",
+  "EffectiveDate": "20160701"
+ },
+ "Overall": {
+  "MinScore": "1000",
+  "MaxScore": "2000"
+ },
+ "PerformanceLevels": {
+  "Level1": {
+   "Name": "Minimal Understanding",
+   "CutPoint": "1000"
+  },
+  "Level2": {
+   "Name": "Partial Understanding",
+   "CutPoint": "1200"
+  },
+  "Level3": {
+   "Name": "Adequate Understanding",
+   "CutPoint": "1400"
+  },
+  "Level4": {
+   "Name": "Thorough Understanding",
+   "CutPoint": "1600"
+  },
+  "Level5": {
+   "Name": "",
+   "CutPoint": ""
+  }
+ },
+ "Claims": {
+  "Claim1": {
+   "Name": "Editing",
+   "MinScore": "1000",
+   "MaxScore": "2000"
+  },
+  "Claim2": {
+   "Name": "Writing",
+   "MinScore": "1000",
+   "MaxScore": "2000"
+  },
+  "Claim3": {
+   "Name": "Listening",
+   "MinScore": "1000",
+   "MaxScore": "2000"
+  },
+  "Claim4": {
+   "Name": "Research and Inquiry",
+   "MinScore": "1000",
+   "MaxScore": "2000"
+  }
+ },
+ "ClaimsPerformanceLevel": {
+  "Level1": {
+   "Name": "Below Standard"
+  },
+  "Level2": {
+   "Name": "At or Near Standard"
+  },
+  "Level3": {
+   "Name": "Above Standard"
+  }
+ },
+ "Source": {
+  "EmailNotification": "agorina@fariwaytech.com",
+  "CallbackUrl": "http://cnn.com"
+ }
+}
