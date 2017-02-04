@@ -1,0 +1,27 @@
+subprojects {
+  apply plugin: "java"
+  apply plugin: "maven"
+  apply plugin: "jacoco"
+
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+
+  repositories {
+      mavenCentral()
+  }
+
+  group = "org.rdw.common"
+  version = "0.0.1-SNAPSHOT"
+
+  dependencies {
+    testCompile "junit:junit:4+"
+    testCompile "org.assertj:assertj-core:3.6.2"
+  }
+
+  jacoco {
+    toolVersion = "0.7.6.201602180812"
+  }
+  test.finalizedBy jacocoTestReport
+}
+  
+
