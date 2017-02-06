@@ -1,0 +1,462 @@
+<TDSReport>
+  <Test grade="6" mode="online" contract="SBAC" bankKey="200" testId="SBAC-ICA-FIXED-G6M-COMBINED-2017" subject="MATH" name="(SBAC)SBAC-ICA-FIXED-G6M-COMBINED-2017-Winter-2016-2017" handScoreProject="0" />
+  <Examinee isDemo="0" key="3865443">
+    <ExamineeAttribute name="504Plan" value="N" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="Birthdate" value="07012005" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="ContentRegistrationIDELA" value="0000702329002014" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="ContentRegistrationIDMath" value="0000702329002002" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="ContentRegistrationIDScience" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="EnglishLanguageAcquisitionStatus" value="EO" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="Ethnicity" value="6" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="FIRSTENTRYDATEINTOUSSCHOOL" value="09012009" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="FirstName" value="FirstName8" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="GradeLevelWhenAssessed" value="06" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="LANGUAGECODE" value="ENG" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="LastOrSurname" value="LastName8" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="LEP" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="LEPEXITDATE" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="LEPType" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="LIMITEDENGLISHPROFICIENCYENTRYDATE" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="MiddleName" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="MIGRNTEDFG" value="N" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="ParentHighestEducationLevel" value="12" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="PD" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="Sex" value="M" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="SPED" value="" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="SSID" value="8888888888" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeAttribute name="TITLE1" value="Y" context="INITIAL" contextDate="2016-11-28T11:56:10.457" />
+    <ExamineeRelationship name="ResponsibleDistrictIdentifier" value="01279850000000" context="INITIAL" contextDate="2016-11-28T11:56:10.457" entityKey="12189" />
+    <ExamineeRelationship name="ResponsibleSchoolIdentifier" value="19647330127985" context="INITIAL" contextDate="2016-11-28T11:56:10.457" entityKey="3217" />
+  </Examinee>
+  <Opportunity key="f35a3613-5a7b-4a83-8b1d-8669da120142" taId="jpaananen@ingeniumschools.org" taName="Paananen, Jason" sessionId="CA-5287-74" testReason="Unassigned" windowId="SBAC_ICA_16_17" database="West_Shard" qaLevel="" clientName="California" reportingVersion="0" server="805838-OSHRDBDA" gracePeriodRestarts="0" dateCompleted="2016-11-29T13:23:03.04" ftCount="0" itemCount="36" pauseCount="0" status="completed" statusDate="2016-11-29T13:23:03.04" startDate="2016-11-28T11:56:10.457" oppId="60589973" windowOpportunity="1" opportunity="0" abnormalStarts="0">
+    <Segment id="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017" position="1" formId="Math ICA G6 No Calc 2017 ENG COMBINED" formKey="200-18794" algorithm="fixedform" />
+    <Segment id="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017" position="2" formId="Math ICA G6 Calc 2017 ENG COMBINED" formKey="200-18799" algorithm="fixedform" />
+    <Segment id="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017" position="3" formId="Math ICA Perf G6 CellPhonePlan 2017 ENG COMBINED" formKey="200-18854" algorithm="fixedform" />
+    <Accommodation code="TDS_CalcBasic" type="Calculator" value="Basic" segment="2" />
+    <Accommodation code="ENU" type="Language" value="English" segment="0" />
+    <Accommodation code="MnrOfAdmin_NonStnd" type="Manner of Administration" value="Nonstandardized" segment="0" />
+    <Accommodation code="NEA0" type="Non-Embedded Accommodations" value="None" segment="0" />
+    <Accommodation code="NEDS0" type="Non-Embedded Designated Supports" value="None" segment="0" />
+    <Accommodation code="TDS_APC_SCRUBBER" type="Audio Playback Controls" value="Scrubber" segment="0" />
+    <Accommodation code="TDS_ASL0" type="American Sign Language" value="Do not show ASL videos" segment="0" />
+    <Accommodation code="TDS_BT0" type="Braille Type" value="Not Applicable" segment="0" />
+    <Accommodation code="TDS_CC0" type="Color Choices" value="Black on White" segment="0" />
+    <Accommodation code="TDS_EC1" type="Enhanced Contrast" value="Greater contrast on UI elements" segment="0" />
+    <Accommodation code="TDS_Emboss0" type="Emboss" value="None" segment="0" />
+    <Accommodation code="TDS_ESO_DetectBrowserBreach" type="Enhanced Security Options" value="ESO DetectBrowserBreach" segment="0" />
+    <Accommodation code="TDS_ExpandableItems0" type="Expandable Items" value="Expandable Items Off" segment="0" />
+    <Accommodation code="TDS_ExpandablePassages1" type="Expandable Passages" value="Expandable Passages On" segment="0" />
+    <Accommodation code="TDS_F_S14" type="Passage Font Size" value="14pt" segment="0" />
+    <Accommodation code="TDS_FT_Verdana" type="Font Type" value="Verdana" segment="0" />
+    <Accommodation code="TDS_Highlight1" type="Highlight" value="ON" segment="0" />
+    <Accommodation code="TDS_IF_S14" type="Item Font Size" value="14pt Items" segment="0" />
+    <Accommodation code="TDS_InfoBar_Saved&amp;TDS_InfoBar_Name&amp;TDS_InfoBar_ItemSecurity" type="InfoBar" value="Show last save&amp;Show student name&amp;Show Item Security Cypher" segment="0" />
+    <Accommodation code="TDS_ItemBadges1" type="Item Badges" value="On" segment="0" />
+    <Accommodation code="TDS_ItemSecurity1" type="ItemSecurity" value="Cypher shown on nav bar" segment="0" />
+    <Accommodation code="TDS_ITM1" type="Item Tools Menu" value="On" segment="0" />
+    <Accommodation code="TDS_ITTC_Volume&amp;TDS_ITTC_Pitch&amp;TDS_ITTC_Rate" type="IntraTest TTS Controls" value="Allow Volume, Pitch, and Rate Adjustments" segment="0" />
+    <Accommodation code="TDS_Masking0" type="Masking" value="Masking Not Available" segment="0" />
+    <Accommodation code="TDS_MfR1" type="Mark for Review" value="ON" segment="0" />
+    <Accommodation code="TDS_NBO_HideStudentNameSSID" type="NavBarOptions" value="Hide Student Name and SSID" segment="0" />
+    <Accommodation code="TDS_PM0" type="Permissive Mode" value="Permissive Mode Disabled" segment="0" />
+    <Accommodation code="TDS_PoD0" type="Print on Request" value="None" segment="0" />
+    <Accommodation code="TDS_PS_L0" type="Print Size" value="1X" segment="0" />
+    <Accommodation code="TDS_RSL_ListView" type="Review Screen Layout" value="List" segment="0" />
+    <Accommodation code="TDS_SCNotepad" type="Student Comments" value="On" segment="0" />
+    <Accommodation code="TDS_SLM0" type="Streamlined Mode" value="Off" segment="0" />
+    <Accommodation code="TDS_ST1" type="Strikethrough" value="ON" segment="0" />
+    <Accommodation code="TDS_SVC1" type="System Volume Control" value="Show widget" segment="0" />
+    <Accommodation code="TDS_T1" type="Tutorial" value="True" segment="0" />
+    <Accommodation code="TDS_TTS0" type="TTS" value="None" segment="0" />
+    <Accommodation code="TDS_TTSAA_Volume&amp;TDS_TTSAA_Pitch&amp;TDS_TTSAA_Rate&amp;TDS_TTSAA_SelectVP" type="TTS Audio Adjustments" value="All Options" segment="0" />
+    <Accommodation code="TDS_TTX_A203" type="TTX Business Rules" value="A203" segment="0" />
+    <Accommodation code="TDS_VPC_PLAYPAUSE&amp;TDS_VPC_MUTE&amp;TDS_VPC_SCRUBBER&amp;TDS_VPC_FULLSCREEN&amp;TDS_VPC_RATE" type="Video Playback Controls" value="Play and Pause&amp;Mute and Unmute&amp;Video Scrubber&amp;Fullscreen View Mode&amp;Playback Rate" segment="0" />
+    <Accommodation code="TDS_WL_Glossary" type="Word List" value="English Glossary" segment="0" />
+    <Accommodation code="TDS_CalcBasic" type="Calculator" value="Basic" segment="3" />
+    <Score measureOf="Overall" measureLabel="Attempted" value="Y" standardError="" />
+    <Score measureOf="Overall" measureLabel="ThetaScore" value="-0.367833861264632" standardError="0.315134289822485" />
+    <Score measureOf="1" measureLabel="ThetaScore" value="-0.199516429483395" standardError="0.398813520301038" />
+    <Score measureOf="SOCK_2" measureLabel="ThetaScore" value="-0.633596870514934" standardError="0.779430143835742" />
+    <Score measureOf="3" measureLabel="ThetaScore" value="-0.674815606194961" standardError="0.812502446370962" />
+    <Score measureOf="Overall" measureLabel="ScaleScore" value="2485.73077480171" standardError="24.9901491829231" />
+    <Score measureOf="1" measureLabel="ScaleScore" value="2499.07834714197" standardError="31.6259121598723" />
+    <Score measureOf="SOCK_2" measureLabel="ScaleScore" value="2464.65576816817" standardError="61.8088104061743" />
+    <Score measureOf="3" measureLabel="ScaleScore" value="2461.38712242874" standardError="64.4314439972173" />
+    <Score measureOf="Overall" measureLabel="PerformanceLevel" value="2" standardError="" />
+    <Score measureOf="1" measureLabel="PerformanceLevel" value="1" standardError="" />
+    <Score measureOf="SOCK_2" measureLabel="PerformanceLevel" value="2" standardError="" />
+    <Score measureOf="3" measureLabel="PerformanceLevel" value="2" standardError="" />
+    <Score measureOf="Overall" measureLabel="ItemCount" value="36" standardError="0" />
+    <Score measureOf="1" measureLabel="ItemCount" value="19" standardError="0" />
+    <Score measureOf="SOCK_2" measureLabel="ItemCount" value="9" standardError="0" />
+    <Score measureOf="3" measureLabel="ItemCount" value="8" standardError="0" />
+    <Score measureOf="Overall" measureLabel="ItemCountScored" value="36" standardError="0" />
+    <Score measureOf="1" measureLabel="ItemCountScored" value="19" standardError="0" />
+    <Score measureOf="SOCK_2" measureLabel="ItemCountScored" value="9" standardError="0" />
+    <Score measureOf="3" measureLabel="ItemCountScored" value="8" standardError="0" />
+    <Score measureOf="Overall" measureLabel="RawScore" value="11" standardError="0" />
+    <Score measureOf="1" measureLabel="RawScore" value="8" standardError="0" />
+    <Score measureOf="SOCK_2" measureLabel="RawScore" value="1" standardError="0" />
+    <Score measureOf="3" measureLabel="RawScore" value="2" standardError="0" />
+    <Score measureOf="Item_9665" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_690" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_16561" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_383" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_5950" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_14350" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_16565" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_9559" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_24563" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_375" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_1496" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_3973" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_13876" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_27583" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_25679" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_14428" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_4978" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_25766" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_4093" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_14362" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_24179" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_26162" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_4870" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_5108" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_24579" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_1516" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_25973" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_12092" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_49686" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_25681" measureLabel="RawScore" value="1" standardError="" />
+    <Score measureOf="Item_13308" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_13309" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_13311" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_13312" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_13310" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_13313" measureLabel="RawScore" value="0" standardError="" />
+    <Score measureOf="Item_9665" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_690" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_16561" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_383" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_5950" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_14350" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_16565" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_9559" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_24563" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_375" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_1496" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_3973" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_13876" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_27583" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_25679" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_14428" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_4978" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_25766" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_4093" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_14362" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_24179" measureLabel="PointsPossible" value="2" standardError="" />
+    <Score measureOf="Item_26162" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_4870" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_5108" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_24579" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_1516" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_25973" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_12092" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_49686" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_25681" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_13308" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_13309" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_13311" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_13312" measureLabel="PointsPossible" value="1" standardError="" />
+    <Score measureOf="Item_13310" measureLabel="PointsPossible" value="2" standardError="" />
+    <Score measureOf="Item_13313" measureLabel="PointsPossible" value="3" standardError="" />
+    <GenericVariable name="DateSent" context="QA" value="2016-12-29T13:42:47.1374255" />
+    <GenericVariable name="OPPID" value="20628656" context="COMPONENT_1" />
+    <GenericVariable name="STATUS" value="completed" context="COMPONENT_1" />
+    <GenericVariable name="TESTID" value="SBAC-ICA-FIXED-G6M" context="COMPONENT_1" />
+    <GenericVariable name="MODE" value="online" context="COMPONENT_1" />
+    <GenericVariable name="OPPKEY" value="a0f1405f-0f91-431b-a1bb-2224d6bf231e" context="COMPONENT_1" />
+    <GenericVariable name="OPPORTUNITY" value="1" context="COMPONENT_1" />
+    <GenericVariable name="OPPID" value="20662137" context="COMPONENT_2" />
+    <GenericVariable name="STATUS" value="scored" context="COMPONENT_2" />
+    <GenericVariable name="TESTID" value="SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-MATH-6" context="COMPONENT_2" />
+    <GenericVariable name="MODE" value="online" context="COMPONENT_2" />
+    <GenericVariable name="OPPKEY" value="5998fa80-264c-44fd-b5a9-49fe55ae9cd2" context="COMPONENT_2" />
+    <GenericVariable name="OPPORTUNITY" value="1" context="COMPONENT_2" />
+    <Item pageTime="204000" pageNumber="1" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-28T11:56:13.467" clientId="" key="9665" bankKey="200" position="1" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T11:59:34.493" key="19189fcc-9282-44d2-a02b-f945999003d2">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="11"&gt;&lt;mstyle&gt;&lt;mn&gt;11&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 1.Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="341700" pageNumber="2" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-28T11:56:13.473" clientId="" key="690" bankKey="200" position="2" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:05:16.44" key="4182fc8c-851f-4aec-bee9-de2370d140b9">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="6"&gt;&lt;mstyle&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 1.Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="27800" pageNumber="3" pageVisits="2" numberVisits="2" format="MI" adminDate="2016-11-28T11:56:13.48" clientId="" key="16561" bankKey="200" position="3" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:05:43.58" key="47fb3528-ef13-4fe2-9cb9-49d55aa9dd90">&lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;2 b&lt;/value&gt;&lt;value&gt;3 b&lt;/value&gt;&lt;value&gt;4 a&lt;/value&gt;&lt;value&gt;5 a&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="-1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message />
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="92800" pageNumber="4" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-28T11:59:34.5" clientId="" key="383" bankKey="200" position="4" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:07:16.18" key="743f0a25-c454-4419-892c-f3e4a558233e">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="-69.7-79.8"&gt;&lt;mstyle&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mn&gt;69.7&lt;/mn&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mn&gt;79.8&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="150800" pageNumber="5" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-28T12:05:16.447" clientId="" key="5950" bankKey="200" position="5" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:09:46.743" key="6f72461b-1889-4dc5-98e1-d422752f49fb">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="18"&gt;&lt;mstyle&gt;&lt;mn&gt;18&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 1.Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="128000" pageNumber="6" pageVisits="2" numberVisits="2" format="MS" adminDate="2016-11-28T12:05:43.587" clientId="" key="14350" bankKey="200" position="6" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:11:54.7" key="3541af4f-2f06-4f5b-a92c-387784753635">A,B,C</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>B,C</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="27000" pageNumber="7" pageVisits="2" numberVisits="2" format="MI" adminDate="2016-11-28T12:07:16.183" clientId="" key="16565" bankKey="200" position="7" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:12:21.003" key="14fe0cdf-1729-470c-bc44-e47db6ebc438">&lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;2 a&lt;/value&gt;&lt;value&gt;3 b&lt;/value&gt;&lt;value&gt;4 a&lt;/value&gt;&lt;value&gt;5 b&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="-1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message />
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="321400" pageNumber="8" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-28T12:09:46.75" clientId="" key="9559" bankKey="200" position="8" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:17:41.59" key="5f023418-b349-476a-9f84-50dfa2e04d1b">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="149"&gt;&lt;mstyle&gt;&lt;mn&gt;149&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="11700" pageNumber="9" pageVisits="2" numberVisits="2" format="MI" adminDate="2016-11-28T12:11:46.747" clientId="" key="24563" bankKey="200" position="9" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-NoCalc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:17:53.03" key="3a3d0998-d9a5-41a9-a01d-d03733393c25">&lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 a&lt;/value&gt;&lt;value&gt;2 b&lt;/value&gt;&lt;value&gt;3 a&lt;/value&gt;&lt;value&gt;4 b&lt;/value&gt;&lt;value&gt;5 b&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="-1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message />
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="433800" pageNumber="10" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T12:17:56.893" clientId="" key="375" bankKey="200" position="10" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:28:28.8" key="0456ebcd-6422-488a-aefa-9b6ffd565c83">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="60"&gt;&lt;mstyle&gt;&lt;mn&gt;60&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 1.Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="33700" pageNumber="11" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T12:17:56.903" clientId="" key="1496" bankKey="200" position="11" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:29:02.337" key="55d9fc3a-2971-4b22-b10b-5131a6c40546">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="20"&gt;&lt;mstyle&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 1.Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="786400" pageNumber="12" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T12:17:56.91" clientId="" key="3973" bankKey="200" position="12" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:42:08.92" key="fa16e143-dce1-4a93-8326-f2ea5ddc6592">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="37"&gt;&lt;mstyle&gt;&lt;mn&gt;37&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Correct</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="490600" pageNumber="13" pageVisits="1" numberVisits="1" format="MC" adminDate="2016-11-28T12:28:28.807" clientId="" key="13876" bankKey="200" position="13" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:49:25" key="b250cb53-de19-4e69-a2cf-9aaaf7851bb2">B</Response>
+    </Item>
+    <Item pageTime="194400" pageNumber="14" pageVisits="2" numberVisits="2" format="MC" adminDate="2016-11-28T12:29:02.34" clientId="" key="27583" bankKey="200" position="14" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:53:30.567" key="7eaafaeb-e3b2-4d0a-856a-5810d917bb00">B</Response>
+    </Item>
+    <Item pageTime="28700" pageNumber="15" pageVisits="3" numberVisits="3" format="MC" adminDate="2016-11-28T12:42:08.927" clientId="" key="25679" bankKey="200" position="15" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:54:12.36" key="efc08fda-d4ca-4b97-9e9c-d93bd6d018ab">D</Response>
+    </Item>
+    <Item pageTime="142300" pageNumber="16" pageVisits="2" numberVisits="2" format="MC" adminDate="2016-11-28T12:49:24.56" clientId="" key="14428" bankKey="200" position="16" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:56:24.113" key="7d714923-7397-4e34-9f7e-53759b864570">A</Response>
+    </Item>
+    <Item pageTime="18100" pageNumber="17" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T12:53:30.573" clientId="" key="4978" bankKey="200" position="17" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:56:44.257" key="1033e35c-879b-495b-9474-8fb197597ef9">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="6"&gt;&lt;mstyle&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 1.Full credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="49600" pageNumber="18" pageVisits="1" numberVisits="1" format="MS" adminDate="2016-11-28T12:53:33.38" clientId="" key="25766" bankKey="200" position="18" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:57:33.993" key="1d2fb73b-01a6-4aec-a9c8-c0c523f0ff27">B,C,D,E</Response>
+      <ScoreInfo scorePoint="1" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>B,C,D,E</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="13000" pageNumber="19" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T12:56:24.12" clientId="" key="4093" bankKey="200" position="19" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:57:47.26" key="ac7f80ba-f918-4199-9500-2839c6727957">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="19"&gt;&lt;mstyle&gt;&lt;mn&gt;19&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="65200" pageNumber="20" pageVisits="1" numberVisits="1" format="MS" adminDate="2016-11-28T12:56:44.263" clientId="" key="14362" bankKey="200" position="20" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T12:58:52.54" key="df590e1f-17e9-4078-81f3-abc370602f72">A,D</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>A,B,C</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="228200" pageNumber="21" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T12:57:34" clientId="" key="24179" bankKey="200" position="21" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:02:47.307" key="03f2ec2a-c5cf-459a-a0e4-72b6ec7a844a">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="12"&gt;&lt;mstyle&gt;&lt;mn&gt;12&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="10"&gt;&lt;mstyle&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="1" maxScore="2" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 1.Partial Credit2</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="65200" pageNumber="22" pageVisits="1" numberVisits="1" format="MI" adminDate="2016-11-28T12:57:47.267" clientId="" key="26162" bankKey="200" position="22" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:03:53.373" key="6a34c236-5dd0-451b-b16d-8078c00146d9">&lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 b&lt;/value&gt;&lt;value&gt;2 a&lt;/value&gt;&lt;value&gt;3 b&lt;/value&gt;&lt;value&gt;4 a&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="-1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message />
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="11800" pageNumber="23" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T12:58:52.547" clientId="" key="4870" bankKey="200" position="23" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:04:05.257" key="d42ec7a4-be5b-42c8-9980-2c21bae7c3e6">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="5"&gt;&lt;mstyle&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="120000" pageNumber="24" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T13:02:47.313" clientId="" key="5108" bankKey="200" position="24" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:06:08.603" key="894bcb36-89fc-4562-9c55-a5ba2fe156d2">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="15"&gt;&lt;mstyle&gt;&lt;mn&gt;15&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="10"&gt;&lt;mstyle&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: the student enters a correct set of responses into the boxes</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="41400" pageNumber="25" pageVisits="1" numberVisits="1" format="MI" adminDate="2016-11-28T13:03:53.38" clientId="" key="24579" bankKey="200" position="25" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:06:50.94" key="50b0ccda-247f-4a6d-ac91-36e3878ba6d8">&lt;itemResponse&gt;&lt;response id="RESPONSE"&gt;&lt;value&gt;1 a&lt;/value&gt;&lt;value&gt;2 b&lt;/value&gt;&lt;value&gt;3 a&lt;/value&gt;&lt;/response&gt;&lt;/itemResponse&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="-1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message />
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="7900" pageNumber="26" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T13:04:05.267" clientId="" key="1516" bankKey="200" position="26" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:06:59.29" key="2c83259b-b3ae-42a2-8b98-b928114bada3">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="20"&gt;&lt;mstyle&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="56100" pageNumber="27" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T13:06:08.613" clientId="" key="25973" bankKey="200" position="27" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:07:56.517" key="c923273b-4f25-49d7-b544-bcc2ccafdf12">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="5"&gt;&lt;mstyle&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="111000" pageNumber="28" pageVisits="1" numberVisits="1" format="EQ" adminDate="2016-11-28T13:06:50.95" clientId="" key="12092" bankKey="200" position="28" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:09:47.59" key="ec9a0d67-b960-4efa-8408-c1920268eb77">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="10"&gt;&lt;mstyle&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="50100" pageNumber="29" pageVisits="1" numberVisits="1" format="MS" adminDate="2016-11-28T13:06:59.3" clientId="" key="49686" bankKey="200" position="29" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:10:38.27" key="831ba60d-8762-4f95-bdba-39d80a98b1f9">B,D,E</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>A,B,C,F</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="79500" pageNumber="30" pageVisits="1" numberVisits="1" format="MC" adminDate="2016-11-28T13:07:56.527" clientId="" key="25681" bankKey="200" position="30" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="1" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Calc-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-28T13:11:46.61" key="1b1c9abf-4aef-4308-ac0d-f588f0e195c3">D</Response>
+    </Item>
+    <Item pageTime="5798200" pageNumber="31" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-29T11:45:13.243" clientId="" key="13308" bankKey="200" position="31" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-29T12:27:21.29" key="9b6aaa24-16ed-4d4c-84b2-2ec86a9bab5b">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="59.99"&gt;&lt;mstyle&gt;&lt;mn&gt;59.99&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: fc</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="5798200" pageNumber="31" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-29T11:45:13.243" clientId="" key="13309" bankKey="200" position="32" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-29T12:00:31.17" key="2253876d-12a7-4277-8cef-fc62d1af2a6f">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="20.00"&gt;&lt;mstyle&gt;&lt;mn&gt;20.00&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: fc</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="5798200" pageNumber="31" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-29T11:45:13.243" clientId="" key="13311" bankKey="200" position="33" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-29T12:19:27.213" key="04187290-abee-4f46-9409-9f8c67442c8f">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="49"&gt;&lt;mstyle&gt;&lt;mn&gt;49&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="45"&gt;&lt;mstyle&gt;&lt;mn&gt;45&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="1" scoreDimension="overall" scoreStatus="Scored">
+        <ScoreRationale>
+          <Message>Your response earned a score of 0. Full credit requires: Full Credit</Message>
+        </ScoreRationale>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="5798200" pageNumber="31" pageVisits="2" numberVisits="2" format="EQ" adminDate="2016-11-29T11:45:13.243" clientId="" key="13312" bankKey="200" position="34" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/plain" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-29T12:17:24.607" key="70f928e6-be44-47a9-8be2-0e4b4e2bcd5c">&lt;response&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="39.99"&gt;&lt;mstyle&gt;&lt;mn&gt;39.99&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="59.99"&gt;&lt;mstyle&gt;&lt;mn&gt;59.99&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;math xmlns="http://www.w3.org/1998/Math/MathML" title="79.99"&gt;&lt;mstyle&gt;&lt;mn&gt;79.99&lt;/mn&gt;&lt;/mstyle&gt;&lt;/math&gt;&lt;/response&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="0" scoreDimension="Overall" scoreStatus="Scored">
+        <SubScoreList>
+          <ScoreInfo scorePoint="0" maxScore="0" scoreDimension="Initial" scoreStatus="Scored">
+            <ScoreRationale>
+              <Message>{"scorerID":"wtsing@ingeniumschools.org"}</Message>
+            </ScoreRationale>
+          </ScoreInfo>
+        </SubScoreList>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="5798200" pageNumber="31" pageVisits="2" numberVisits="2" format="SA" adminDate="2016-11-29T11:45:13.243" clientId="" key="13310" bankKey="200" position="35" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/html" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-29T13:22:56.007" key="6e1e72b3-5b4a-469a-b580-0ee08b3122d7">&lt;p&gt;The plan i reccomend to use is Unlimited talking plan because you can use any number of minutes to talk just for $99.99 per month with no overuse fee. &amp;nbsp;I want to reccomend that Talk plan to you becausethe other pan have overuse fee&amp;#39;s and he one im reccomending to you there is no fee.&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/p&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="0" scoreDimension="Overall" scoreStatus="Scored">
+        <SubScoreList>
+          <ScoreInfo scorePoint="0" maxScore="0" scoreDimension="Initial" scoreStatus="Scored">
+            <ScoreRationale>
+              <Message>{"scorerID":"wtsing@ingeniumschools.org"}</Message>
+            </ScoreRationale>
+          </ScoreInfo>
+        </SubScoreList>
+      </ScoreInfo>
+    </Item>
+    <Item pageTime="5798200" pageNumber="31" pageVisits="2" numberVisits="2" format="SA" adminDate="2016-11-29T11:45:13.243" clientId="" key="13313" bankKey="200" position="36" scoreStatus="SCORED" operational="1" dropped="0" isSelected="1" score="0" mimeType="text/html" segmentId="(SBAC)SBAC-ICA-FIXED-G6M-Perf-CellPhonePlan-COMBINED-MATH-6-Winter-2016-2017">
+      <Response type="" date="2016-11-29T13:22:56" key="d2884db0-f02c-48f4-8da2-5054c52f60de">&lt;p&gt;The Plan i reccommend for you to use is month 5 because for day 5 you only get 49 data usage &amp;nbsp;and for month5 plan you can get 410 data usag and there is a hug difference between them. Day 5 is only 5 days with 49 data usage and month 5 you can have a lot moere data if you have a 410 data plan. I reccomend month 5 for more data.&lt;/p&gt;</Response>
+      <ScoreInfo scorePoint="0" maxScore="0" scoreDimension="Overall" scoreStatus="Scored">
+        <SubScoreList>
+          <ScoreInfo scorePoint="0" maxScore="0" scoreDimension="Initial" scoreStatus="Scored">
+            <ScoreRationale>
+              <Message>{"scorerID":"wtsing@ingeniumschools.org"}</Message>
+            </ScoreRationale>
+          </ScoreInfo>
+        </SubScoreList>
+      </ScoreInfo>
+    </Item>
+  </Opportunity>
+</TDSReport>
