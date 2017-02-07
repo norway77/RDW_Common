@@ -15,7 +15,11 @@ import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Type;
 
 /**
- *
+ * Utility methods dealing with content metadata.
+ * <p>
+ * Content metadata is the json file that accompanies csv data in the "UDL" archives.
+ * This may not be necessary in the new world where batch csv is not processed.
+ * </p>
  */
 public class JsonUtils {
 

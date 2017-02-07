@@ -46,7 +46,7 @@
   </Examinee>
   <Opportunity server="562299-SBASQL8" database="CASBAC_SHARD_2013sp" clientName="California"
                key="71A3EE01-F215-4CCD-B74D-DF1097A01A0C" oppId="1855629"
-               startDate="2014-04-14T10:49:08.437" status="completed" validity="valid" completeness="complete"
+               startDate="2014-04-14T10:49:08.437" status="completed"
                opportunity="1" statusDate="2014-04-14T11:13:40.900"
                dateCompleted="2014-04-14T11:13:40.900" pauseCount="0" itemCount="6" ftCount="6" abnormalStarts="0"
                gracePeriodRestarts="0" taId="NA" taName="Ringnell, Brandi"
@@ -73,13 +73,13 @@
     <Accommodation type="SpeechToText" value="0" code="ENU" segment="0"/>
     <Score measureOf="Overall" measureLabel="ScaleScore" value="245.174914080214" standardError="19.3617008392283"/>
     <Score measureOf="Overall" measureLabel="PerformanceLevel" value="2"/>
-    <Score measureOf="Reading" measureLabel="ScaleScore" value="352.897" standarderror="619.751"/>
+    <Score measureOf="Reading" measureLabel="ScaleScore" value="352.897" standardError="619.751"/>
     <Score measureOf="Reading" measureLabel="PerformanceLevel" value="2"/>
-    <Score measureOf="Writing" measureLabel="ScaleScore" value="185.002" standarderror="78.321"/>
+    <Score measureOf="Writing" measureLabel="ScaleScore" value="185.002" standardError="78.321"/>
     <Score measureOf="Writing" measureLabel="PerformanceLevel" value="1"/>
-    <Score measureOf="Listening" measureLabel="ScaleScore" value="403.416" standarderror="204.982"/>
+    <Score measureOf="Listening" measureLabel="ScaleScore" value="403.416" standardError="204.982"/>
     <Score measureOf="Listening" measureLabel="PerformanceLevel" value="2"/>
-    <Score measureOf="Research" measureLabel="ScaleScore" value="403.416" standarderror="204.982"/>
+    <Score measureOf="Research" measureLabel="ScaleScore" value="403.416" standardError="204.982"/>
     <Score measureOf="Research" measureLabel="PerformanceLevel" value="2"/>
     <Score measureOf="Print on Demand" measureLabel="Accommodation" value="6"/>
     <Score measureOf="Calculator" measureLabel="Accommodation" value="6"/>
@@ -214,13 +214,13 @@
         &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
       </Response>
       <ScoreInfo scorePoint="4" scoreDimension="overall" scoreStatus="Scored">
-        <ScoreRationale>Some information here about the score</ScoreRationale>
+        <ScoreRationale><Message>Some information here about the score</Message></ScoreRationale>
         <SubScoreList>
           <ScoreInfo scorePoint="2" scoreDimension="Conventions" scoreStatus="Scored">
             <SubScoreList/>
           </ScoreInfo>
           <ScoreInfo scorePoint="1" scoreDimension="Purpose" scoreStatus="Scored">
-            <ScoreRationale>Possibly some information here about this dimension score</ScoreRationale>
+            <ScoreRationale><Message>Possibly some information here about this dimension score</Message></ScoreRationale>
             <SubScoreList/>
           </ScoreInfo>
           <ScoreInfo scorePoint="1" scoreDimension="Evidence" scoreStatus="Scored">
@@ -236,7 +236,7 @@
           pageNumber="3" pageVisits="1" pageTime="0" dropped="0">
       <Response date="2014-04-24T12:32:46.377">A,B,C,F</Response>
       <ScoreInfo scorePoint="0" scoreDimension="overall" scoreStatus="Scored">
-        <ScoreRationale>A,F</ScoreRationale>
+        <ScoreRationale><Message>A,F</Message></ScoreRationale>
         <SubScoreList/>
       </ScoreInfo>
     </Item>
