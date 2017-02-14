@@ -1,1 +1,4 @@
-include ":model", ":messaging"
+include ":messaging"
+include ":model"
+include ":utils"
+
