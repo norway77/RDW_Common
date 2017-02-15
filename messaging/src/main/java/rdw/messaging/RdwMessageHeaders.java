@@ -13,9 +13,12 @@ import org.springframework.messaging.MessageHeaders;
  */
 public class RdwMessageHeaders {
 
-    public static final String ContentType = MessageHeaders.CONTENT_TYPE;
+    private static final String Prefix = "rdw_";
 
-    public static final String Prefix = "rdw_";
+    static final String Content = Prefix + "content";
+    static final String Received = Prefix + "received";
 
-    public static final String Content = Prefix + "content";    // TRT_V0, StudentReg, etc.
+    private static final String UserPrefix = Prefix + "user_";
+    static final String UserLogin = UserPrefix + "login";
+    static final String UserTenancyChain = UserPrefix + "tenancyChain";
 }
