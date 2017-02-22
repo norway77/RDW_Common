@@ -1,3 +1,4 @@
+
 package rdw.model;
 
 import javax.xml.bind.annotation.XmlEnum;

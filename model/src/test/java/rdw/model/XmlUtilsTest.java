@@ -41,18 +41,15 @@ public class XmlUtilsTest {
     }
 
     @Test
-    public void itShouldUnmarshalSamplesFromETS() {
+    public void itShouldUnmarshalSamplesFromTDS() {
         for (final String sample : new String[] {
-            "SBAC-IAB-FIXED-G4E-Editing-ELA-4.xml",
-            "SBAC-IAB-FIXED-G4M-OA-MATH-4.xml",
-            "SBAC-IAB-FIXED-G6E-Revision-ELA-6.xml",
-            "SBAC-IAB-FIXED-G6M-RP.xml",
-            "SBAC-IAB-FIXED-G11M-AlgLin.xml",
-            "SBAC-ICA-FIXED-G5E-COMBINED-2017.xml",
-            "SBAC-ICA-FIXED-G5M-COMBINED-2017.xml",
-            "SBAC-ICA-FIXED-G6M-COMBINED-2017.xml",
-            "SBAC-ICA-FIXED-G7E-COMBINED-2017.xml",
-            "SBAC-ICA-FIXED-G8E-COMBINED-2017.xml"
+                "SBAC-IAB-FIXED-G4M-G-MATH-4.xml",
+                "SBAC-IAB-FIXED-G6E-LangVocab-ELA-6.xml",
+                "SBAC-IAB-FIXED-G6E-ReadLit-ELA-6.xml",
+                "SBAC-IAB-FIXED-G6M-EE.xml",
+                "SBAC-ICA-FIXED-G4M-COMBINED-2017.xml",
+                "SBAC-ICA-FIXED-G6E-COMBINED-2017.xml",
+                "SBAC-ICA-FIXED-G6M-COMBINED-2017.xml"
         }) {
             final TDSReport tdsReport = XmlUtils.tdsReportFromXml(this.getClass().getResourceAsStream("/" + sample));
             assertThat(tdsReport.getTest().getTestId()).isEqualTo(sample.substring(0, sample.length() - 4));
@@ -62,24 +59,23 @@ public class XmlUtilsTest {
     private void assertSampleTDSReport(final TDSReport tdsReport) {
         assertThat(tdsReport).isNotNull();
         // spot check a few values
-        assertThat(tdsReport.getTest().getAcademicYear()).isEqualTo(2014);
-        assertThat(tdsReport.getExaminee().getKey()).isEqualTo(922171);
-        assertThat(tdsReport.getExaminee().getExamineeAttributeOrExamineeRelationship()).hasSize(27);
-        assertThat(tdsReport.getOpportunity().getTaName()).isEqualTo("Ringnell, Brandi");
-        assertThat(tdsReport.getOpportunity().getScore()).hasSize(12);
+        assertThat(tdsReport.getTest().getAcademicYear()).isEqualTo(2016);
+        assertThat(tdsReport.getExaminee().getKey()).isEqualTo(4054);
+        assertThat(tdsReport.getExaminee().getExamineeAttributeOrExamineeRelationship()).hasSize(66);
+        assertThat(tdsReport.getOpportunity().getTaName()).isEqualTo("UAT Lab15");
+        assertThat(tdsReport.getOpportunity().getScore()).hasSize(5);
         assertThat(tdsReport.getOpportunity().getScore().stream()
                 .filter(score -> score.getMeasureOf().equals("Overall") && score.getMeasureLabel().equals("PerformanceLevel"))
-                .findFirst().get().getValue()).isEqualTo("2");
-        assertThat(tdsReport.getToolUsage().get(0).getToolPage().get(0).getGroupId()).isEqualTo("I-200-22489");
+                .findFirst().get().getValue()).isEqualTo("3");
     }
 
     private void assertSample2TDSReport(final TDSReport tdsReport) {
         assertThat(tdsReport).isNotNull();
         // spot check a few values
         assertThat(tdsReport.getTest().getAcademicYear()).isEqualTo(0);
-        assertThat(tdsReport.getExaminee().getKey()).isEqualTo(5);
-        assertThat(tdsReport.getExaminee().getExamineeAttributeOrExamineeRelationship()).hasSize(50);
-        assertThat(tdsReport.getOpportunity().getTaName()).isEqualTo("Test Admin4");
-        assertThat(tdsReport.getOpportunity().getItem()).hasSize(27);
+        assertThat(tdsReport.getExaminee().getKey()).isEqualTo(4053);
+        assertThat(tdsReport.getExaminee().getExamineeAttributeOrExamineeRelationship()).hasSize(66);
+        assertThat(tdsReport.getOpportunity().getTaName()).isEqualTo("UAT Lab20");
+        assertThat(tdsReport.getOpportunity().getItem()).hasSize(15);
     }
 }
