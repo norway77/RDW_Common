@@ -10,7 +10,7 @@ subprojects {
       mavenCentral()
   }
 
-  group = "org.rdw.common"
+  group = "org.opentestsystem.rdw.common"
   version = "0.0.1-SNAPSHOT"
 
   dependencies {
