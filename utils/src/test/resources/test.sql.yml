@@ -1,0 +1,10 @@
+widget:
+  getWidgets:
+    sql: >-
+      select * from widget
+  getWidget:
+    sql: >-
+      select * from widget where id=:id
+  getClip:
+    sql: >
+      select * from widget
