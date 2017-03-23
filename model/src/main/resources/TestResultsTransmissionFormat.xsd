@@ -84,7 +84,7 @@ governing permissions and limitations under the License.
                   </xs:attribute>
                   <xs:attribute name="formId"/>
                   <xs:attribute name="formKey"/>
-                  <xs:attribute name="algorithm" use="required"/>
+                  <xs:attribute name="algorithm"/>
                   <!-- new field requested for open source -->
                   <xs:attribute name="algorithmVersion"/>
                 </xs:complexType>

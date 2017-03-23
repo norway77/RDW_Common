@@ -14,11 +14,10 @@ subprojects {
   version = "0.0.1-SNAPSHOT"
 
   dependencies {
-    compile "org.slf4j:slf4j-api:1.7.22"
-    compile "com.google.guava:guava:21.0"
+    compile 'org.slf4j:slf4j-api:1.7.22'
 
-    testCompile "junit:junit:4+"
-    testCompile "org.assertj:assertj-core:3.6.2"
+    testCompile 'junit:junit:4+'
+    testCompile 'org.assertj:assertj-core:3.6.2'
   }
 
   jacoco {

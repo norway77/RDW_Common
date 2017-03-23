@@ -1,5 +1,5 @@
 dependencies {
-    compile ('org.springframework:spring-context:+')
-    testCompile('org.springframework:spring-test:+')
-    testRuntime('org.yaml:snakeyaml:+')
+    compile 'org.springframework:spring-context:+'
+    testCompile 'org.springframework:spring-test:+'
+    testRuntime 'org.yaml:snakeyaml:+'
 }
