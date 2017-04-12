@@ -85,7 +85,6 @@ governing permissions and limitations under the License.
                   <xs:attribute name="formId"/>
                   <xs:attribute name="formKey"/>
                   <xs:attribute name="algorithm"/>
-                  <!-- new field requested for open source -->
                   <xs:attribute name="algorithmVersion"/>
                 </xs:complexType>
               </xs:element>
@@ -93,9 +92,7 @@ governing permissions and limitations under the License.
                 <xs:complexType>
                   <xs:attribute name="type" use="required"/>
                   <xs:attribute name="value" use="required"/>
-                  <!-- DTD says implied, but this cannot be null -->
                   <xs:attribute name="code" use="required"/>
-                  <!-- DTD says implied, but this will always be populated; 0 if not segment-oriented -->
                   <xs:attribute name="segment" use="required">
                     <xs:simpleType>
                       <xs:restriction base="xs:unsignedInt">
@@ -255,8 +252,7 @@ governing permissions and limitations under the License.
             </xs:attribute>
             <xs:attribute name="dateForceCompleted" type="NullableDateTime"/>
             <xs:attribute name="qaLevel"/>
-            <!-- new field requested for open source -->
-            <xs:attribute name="assessmentParticipantSessionPlatformUserAgent" use="required"/>
+            <xs:attribute name="assessmentParticipantSessionPlatformUserAgent"/>
             <!-- the first date of the first window for a given assessment. Format = YYYY-MM-DD -->
             <xs:attribute name="effectiveDate"/>
             <xs:attribute name="reportingVersion" type="xs:unsignedInt"/>
