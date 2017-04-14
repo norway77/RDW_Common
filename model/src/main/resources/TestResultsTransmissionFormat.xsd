@@ -71,7 +71,7 @@ governing permissions and limitations under the License.
           <xs:complexType>
             <xs:sequence>
               <!-- note: DTD has minOccurs=1, but we could get an invalidation for a joined but
-              not-started test; no seg will have been initialized in this case -->
+                            not-started test; no seg will have been initialized in this case -->
               <xs:element name="Segment" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:attribute name="id" use="required"/>
@@ -85,6 +85,7 @@ governing permissions and limitations under the License.
                   <xs:attribute name="formId"/>
                   <xs:attribute name="formKey"/>
                   <xs:attribute name="algorithm"/>
+                  <!-- new field requested for open source -->
                   <xs:attribute name="algorithmVersion"/>
                 </xs:complexType>
               </xs:element>
@@ -92,7 +93,9 @@ governing permissions and limitations under the License.
                 <xs:complexType>
                   <xs:attribute name="type" use="required"/>
                   <xs:attribute name="value" use="required"/>
+                  <!-- DTD says implied, but this cannot be null -->
                   <xs:attribute name="code" use="required"/>
+                  <!-- DTD says implied, but this will always be populated; 0 if not segment-oriented -->
                   <xs:attribute name="segment" use="required">
                     <xs:simpleType>
                       <xs:restriction base="xs:unsignedInt">
@@ -140,7 +143,7 @@ governing permissions and limitations under the License.
                   <xs:attribute name="position" use="required" type="xs:unsignedInt"/>
                   <xs:attribute name="segmentId" use="required"/>
                   <xs:attribute name="bankKey" use="required" type="xs:unsignedInt"/>
-                  <xs:attribute name="key" use="required"/>
+                  <xs:attribute name="key" use="required" type="xs:unsignedInt"/>
                   <xs:attribute name="operational" use="required" type="Bit"/>
                   <xs:attribute name="isSelected" use="required" type="Bit"/>
                   <xs:attribute name="format" use="required"/>
@@ -160,7 +163,7 @@ governing permissions and limitations under the License.
                   </xs:attribute>
                   <xs:attribute name="adminDate" use="required" type="xs:dateTime"/>
                   <xs:attribute name="numberVisits" use="required" type="xs:unsignedInt"/>
-                  <xs:attribute name="responseDuration" use="required" type="UFloat"/>
+                  <xs:attribute name="responseDuration" use="required" type="xs:float" />
                   <xs:attribute name="mimeType" use="required">
                     <xs:simpleType>
                       <xs:restriction base="xs:token">
@@ -177,7 +180,7 @@ governing permissions and limitations under the License.
                   <xs:attribute name="pageNumber" use="required" type="xs:unsignedInt"/>
                   <xs:attribute name="pageVisits" use="required" type="xs:unsignedInt"/>
                   <!-- this should really be unsignedInt, but there are rare occassions
-                  where it cannot be calculated correctly and we get a negative value. -->
+                                    where it cannot be calculated correctly and we get a negative value.  -->
                   <xs:attribute name="pageTime" use="required" type="xs:int"/>
                   <xs:attribute name="dropped" use="required" type="Bit"/>
                 </xs:complexType>
@@ -207,17 +210,16 @@ governing permissions and limitations under the License.
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
-            <!-- there is a conflict between the spec and generated data; one of these will be provided -->
-            <xs:attribute name="completeness">
+            <xs:attribute name="validity" default="">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
-                  <xs:enumeration value="none"/>
-                  <xs:enumeration value="partial"/>
-                  <xs:enumeration value="complete"/>
+                  <xs:enumeration value="valid"/>
+                  <xs:enumeration value="invalid"/>
+                  <xs:enumeration value=""/>
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="completeStatus">
+            <xs:attribute name="completeness">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
                   <xs:enumeration value=""/>
@@ -239,21 +241,31 @@ governing permissions and limitations under the License.
             <xs:attribute name="sessionId"/>
             <xs:attribute name="windowId" use="required"/>
             <xs:attribute name="windowOpportunity" type="NullableUInt"/>
-            <xs:attribute name="administrationCondition">
+            <xs:attribute name="completeStatus">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
                   <xs:enumeration value=""/>
+                  <xs:enumeration value="Partial"/>
+                  <xs:enumeration value="Complete"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="administrationCondition">
+              <xs:simpleType>
+                <xs:restriction base="xs:token">
                   <xs:enumeration value="Valid"/>
                   <xs:enumeration value="SD"/>
                   <xs:enumeration value="NS"/>
                   <xs:enumeration value="IN"/>
+                  <xs:enumeration value=""/>
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="dateForceCompleted" type="NullableDateTime"/>
             <xs:attribute name="qaLevel"/>
-            <xs:attribute name="assessmentParticipantSessionPlatformUserAgent"/>
-            <!-- the first date of the first window for a given assessment. Format = YYYY-MM-DD -->
+            <!-- new field requested for open source -->
+            <xs:attribute name="assessmentParticipantSessionPlatformUserAgent" use="required"/>
+            <!-- the first date of the first window for a given assessment.  Format = YYYY-MM-DD -->
             <xs:attribute name="effectiveDate"/>
             <xs:attribute name="reportingVersion" type="xs:unsignedInt"/>
             <xs:attribute name="testReason"/>
@@ -261,7 +273,6 @@ governing permissions and limitations under the License.
         </xs:element>
         <xs:element name="Comment" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType mixed="true">
-            <!-- TODO: domain values; I've seen GlobalNotes and TESTITEM, but I'm not sure how rigid this is. -->
             <!-- TODO: domain values; I've seen GlobalNotes and TESTITEM, but I'm not sure how rigid this is. -->
             <xs:attribute name="context" use="required"/>
             <xs:attribute name="itemPosition" type="NullableUInt" use="required"/>
@@ -307,8 +318,8 @@ governing permissions and limitations under the License.
     <!-- same constaints as item/@score -->
     <xs:attribute name="scorePoint" type="UFloatAllowNegativeOne" use="required"/>
     <xs:attribute name="maxScore" type="UFloatAllowNegativeOne" use="required"/>
-    <!-- top level will always be "overall" (if not null); this represents the item score. Nested ScoreInfo nodes will have dimention level scores
-    if applicable, so this will be the dimension name. An additional level of nesting may be used for hand-scoring reads. -->
+    <!-- top level will always be "overall" (if not null); this represents the item score.  Nested ScoreInfo nodes will have dimention level scores
+        if applicable, so this will be the dimension name.  An additional level of nesting may be used for hand-scoring reads. -->
     <xs:attribute name="scoreDimension" use="required"/>
     <xs:attribute name="scoreStatus" use="required">
       <xs:simpleType>
@@ -349,15 +360,15 @@ governing permissions and limitations under the License.
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="NullableDateTime">
-    <xs:union memberTypes="xs:dateTime Empty ">
+    <xs:union memberTypes="xs:dateTime Empty  ">
     </xs:union>
   </xs:simpleType>
   <xs:simpleType name="NullableUInt">
-    <xs:union memberTypes="xs:unsignedInt Empty ">
+    <xs:union memberTypes="xs:unsignedInt Empty  ">
     </xs:union>
   </xs:simpleType>
   <xs:simpleType name="NullableFloat">
-    <xs:union memberTypes="xs:float Empty ">
+    <xs:union memberTypes="xs:float Empty  ">
     </xs:union>
   </xs:simpleType>
   <xs:simpleType name="Context">
@@ -372,7 +383,7 @@ governing permissions and limitations under the License.
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="UFloatAllowNegativeOne">
-    <xs:union memberTypes="UFloat NegativeOne ">
+    <xs:union memberTypes="UFloat NegativeOne  ">
     </xs:union>
   </xs:simpleType>
   <xs:simpleType name="UIntOneBased">
