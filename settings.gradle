@@ -1,5 +1,6 @@
 include ":messaging"
 include ":model"
+include ":security"
 include ":utils"
 include ":webclient"
 
@@ -10,3 +11,4 @@ rootProject.name = "rdw-common"
 rootProject.children.each {
     it.name = rootProject.name + "-" + it.name
 }
+
