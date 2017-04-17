@@ -143,7 +143,7 @@ governing permissions and limitations under the License.
                   <xs:attribute name="position" use="required" type="xs:unsignedInt"/>
                   <xs:attribute name="segmentId" use="required"/>
                   <xs:attribute name="bankKey" use="required" type="xs:unsignedInt"/>
-                  <xs:attribute name="key" use="required" type="xs:unsignedInt"/>
+                  <xs:attribute name="key" use="required" type="xs:long"/>
                   <xs:attribute name="operational" use="required" type="Bit"/>
                   <xs:attribute name="isSelected" use="required" type="Bit"/>
                   <xs:attribute name="format" use="required"/>
