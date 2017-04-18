@@ -2,7 +2,6 @@ include ":messaging"
 include ":model"
 include ":security"
 include ":utils"
-include ":webclient"
 
 // It is considered good practice to explicitly set the root project name
 rootProject.name = "rdw-common"
