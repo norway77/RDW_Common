@@ -56,7 +56,7 @@ governing permissions and limitations under the License.
                 <xs:complexType>
                   <xs:attribute name="context" use="required" type="Context"/>
                   <xs:attribute name="name" use="required"/>
-                  <xs:attribute name="entityKey" type="xs:unsignedLong"/>
+                  <xs:attribute name="entityKey"/>
                   <xs:attribute name="value"/>
                   <xs:attribute name="contextDate" use="required" type="xs:dateTime"/>
                 </xs:complexType>
@@ -64,7 +64,7 @@ governing permissions and limitations under the License.
             </xs:choice>
             <!-- negative values are used by TDS for testing. -->
             <xs:attribute name="key" type="xs:long"/>
-            <xs:attribute name="isDemo" type="Bit"/>
+            <xs:attribute name="isDemo" type="xs:boolean"/>
           </xs:complexType>
         </xs:element>
         <xs:element name="Opportunity" minOccurs="1" maxOccurs="1">
