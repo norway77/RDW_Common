@@ -1,0 +1,6 @@
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-aws'
+
+    testCompile 'org.springframework:spring-test'
+    testRuntime 'org.springframework.boot:spring-boot-starter-test'
+}

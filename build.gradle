@@ -42,7 +42,8 @@ subprojects {
     }
     imports {
       // make springframework versions consistent with other projects in the RDW suite
-      mavenBom("org.springframework.boot:spring-boot-dependencies:1.5.2.RELEASE")
+      mavenBom 'org.springframework.boot:spring-boot-dependencies:1.5.2.RELEASE'
+      mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Camden.SR5'
     }
   }
 
