@@ -1,0 +1,9 @@
+dependencies {
+    compile 'com.google.guava:guava'
+
+    // For StatusMvcEndpoint
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+
+    testCompile 'org.springframework:spring-test'
+}
