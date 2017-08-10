@@ -1,4 +1,5 @@
 dependencies {
+    compile 'com.google.guava:guava'
     compile 'org.springframework:spring-core'
     compile 'org.springframework.cloud:spring-cloud-starter-aws'
 
