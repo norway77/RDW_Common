@@ -1,0 +1,15 @@
+include ":archive"
+include ":messaging"
+include ":model"
+include ":security"
+include ":status"
+include ":utils"
+
+// It is considered good practice to explicitly set the root project name
+rootProject.name = "rdw-common"
+
+// Put prefix on all sub projects so artifact id is what we want, e.g. rdw-common-model
+rootProject.children.each {
+    it.name = rootProject.name + "-" + it.name
+}
+
