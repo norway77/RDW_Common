@@ -1,5 +1,10 @@
 ## RDW_Common
-RDW modules used by at least two apps
+RDW modules used by at least two apps.
+
+Additional documentation:
+1. RDW_Common is part of the RDW suite of projects and applications. For all things RDW please refer to 
+[RDW repo](https://github.com/SmarterApp/RDW)
+1. [License](LICENSE)
 
 #### Building Modules
 Java 8.

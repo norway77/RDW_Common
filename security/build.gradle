@@ -1,8 +1,12 @@
 dependencies {
     compile 'javax.validation:validation-api:+'
-    compile 'org.springframework:spring-core'
-    compile 'org.springframework:spring-web'
+
     compile 'com.google.guava:guava'
     compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.7'
+
+    compile 'org.springframework:spring-core'
+    compile 'org.springframework:spring-web'
+    compile 'org.springframework.boot:spring-boot-starter-jdbc'
+
     testCompile 'org.springframework:spring-test'
 }
