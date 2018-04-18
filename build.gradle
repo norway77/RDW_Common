@@ -43,13 +43,14 @@ subprojects {
   dependencyManagement {
     dependencies {
       // commonly used libraries
+      dependency 'com.google.code.gson:gson:2.8.0'
       dependency 'com.google.guava:guava:21.0'
       dependency 'org.slf4j:slf4j-api:1.7+'
 
       // commonly used test libraries
-      dependency 'junit:junit:4.12+'
-      dependency 'org.assertj:assertj-core:3.6+'
-      dependency 'org.mockito:mockito-core:1.10+'
+      dependency 'junit:junit:4.12'
+      dependency 'org.assertj:assertj-core:3.6.2'
+      dependency 'org.mockito:mockito-core:2.16.0'
     }
     imports {
       // make springframework versions consistent with other projects in the RDW suite
