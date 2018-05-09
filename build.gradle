@@ -61,6 +61,7 @@ subprojects {
       dependency 'org.codehaus.woodstox:stax2-api:4.1'
       dependency 'msv:msv:20050913'
       dependency 'msv:xsdlib:20050913'
+      dependency 'xerces:xercesImpl:2.11.0'
     }
     imports {
       // make springframework versions consistent with other projects in the RDW suite

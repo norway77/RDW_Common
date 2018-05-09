@@ -8,6 +8,7 @@ dependencies {
     compile 'org.codehaus.woodstox:stax2-api'
     compile 'msv:msv'
     compile 'msv:xsdlib'
+    compile 'xerces:xercesImpl'
 
     runtime files(Jvm.current().toolsJar)
 }
