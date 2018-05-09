@@ -55,6 +55,12 @@ subprojects {
       dependency 'junit:junit:4.12'
       dependency 'org.assertj:assertj-core:3.6.2'
       dependency 'org.mockito:mockito-core:2.16.0'
+
+      // Woodstox STAX2 XML stream processing API and required
+      // Sun Multi-Schema Validation libraries
+      dependency 'org.codehaus.woodstox:stax2-api:4.1'
+      dependency 'msv:msv:20050913'
+      dependency 'msv:xsdlib:20050913'
     }
     imports {
       // make springframework versions consistent with other projects in the RDW suite
