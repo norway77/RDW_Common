@@ -1,4 +1,5 @@
 include ":archive"
+include ":group"
 include ":messaging"
 include ":model"
 include ":security"
