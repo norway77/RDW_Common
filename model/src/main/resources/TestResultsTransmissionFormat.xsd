@@ -23,7 +23,7 @@ governing permissions and limitations under the License.
             <xs:attribute name="testId" use="required"/>
             <xs:attribute name="bankKey" type="xs:unsignedInt"/>
             <xs:attribute name="contract"/>
-            <xs:attribute name="mode" use="required">
+            <xs:attribute name="mode" default="online">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
                   <xs:enumeration value="online"/>
@@ -188,12 +188,11 @@ governing permissions and limitations under the License.
             </xs:sequence>
             <xs:attribute name="server"/>
             <xs:attribute name="database"/>
-            <xs:attribute name="clientName" use="required"/>
-            <xs:attribute name="key" use="required"/>
+            <xs:attribute name="clientName"/>
+            <xs:attribute name="key"/>
             <xs:attribute name="oppId"/>
-            <!-- note: DTD says required, but may get invalidation for joined, not-started test -->
-            <xs:attribute name="startDate" type="NullableDateTime" use="required"/>
-            <xs:attribute name="status" use="required">
+            <xs:attribute name="startDate" type="NullableDateTime"/>
+            <xs:attribute name="status" default="scored">
               <xs:simpleType>
                 <xs:restriction base="xs:token">
                   <xs:enumeration value="appeal"/>
@@ -228,18 +227,18 @@ governing permissions and limitations under the License.
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="opportunity" use="required" type="xs:unsignedInt"/>
-            <xs:attribute name="statusDate" use="required" type="xs:dateTime"/>
+            <xs:attribute name="opportunity" type="xs:unsignedInt"/>
+            <xs:attribute name="statusDate" type="xs:dateTime"/>
             <xs:attribute name="dateCompleted" type="NullableDateTime" use="required"/>
-            <xs:attribute name="pauseCount" use="required" type="xs:unsignedInt"/>
-            <xs:attribute name="itemCount" use="required" type="xs:unsignedInt"/>
-            <xs:attribute name="ftCount" use="required" type="xs:unsignedInt"/>
-            <xs:attribute name="abnormalStarts" use="required" type="xs:unsignedInt"/>
-            <xs:attribute name="gracePeriodRestarts" use="required" type="xs:unsignedInt"/>
+            <xs:attribute name="pauseCount" type="xs:unsignedInt"/>
+            <xs:attribute name="itemCount" type="xs:unsignedInt"/>
+            <xs:attribute name="ftCount" type="xs:unsignedInt"/>
+            <xs:attribute name="abnormalStarts" type="xs:unsignedInt"/>
+            <xs:attribute name="gracePeriodRestarts" type="xs:unsignedInt"/>
             <xs:attribute name="taId"/>
             <xs:attribute name="taName"/>
             <xs:attribute name="sessionId"/>
-            <xs:attribute name="windowId" use="required"/>
+            <xs:attribute name="windowId"/>
             <xs:attribute name="windowOpportunity" type="NullableUInt"/>
             <xs:attribute name="completeStatus">
               <xs:simpleType>
@@ -263,8 +262,7 @@ governing permissions and limitations under the License.
             </xs:attribute>
             <xs:attribute name="dateForceCompleted" type="NullableDateTime"/>
             <xs:attribute name="qaLevel"/>
-            <!-- new field requested for open source -->
-            <xs:attribute name="assessmentParticipantSessionPlatformUserAgent" use="required"/>
+            <xs:attribute name="assessmentParticipantSessionPlatformUserAgent"/>
             <!-- the first date of the first window for a given assessment.  Format = YYYY-MM-DD -->
             <xs:attribute name="effectiveDate"/>
             <xs:attribute name="reportingVersion" type="xs:unsignedInt"/>
