@@ -1,0 +1,12 @@
+<TDSReport>
+  <!-- This is the sample TRT with the bare minimum of values -->
+  <Test name="(SBAC)SBAC-FT-SomeDescription-MATH-7-Fall-2013-2014" subject="MA" testId="SBAC-FT-SomeDescription-MATH-7" grade="7" assessmentType="Summative" academicYear="2014"/>
+  <Examinee>
+    <ExamineeAttribute context="FINAL" name="SSID" value="CA-9999999598" contextDate="2014-04-14T11:13:41.803" />
+    <ExamineeRelationship context="FINAL" name="SchoolID" entityKey="9426" value="CA_9999827_9999928" contextDate="2014-04-14T11:13:41.810" />
+  </Examinee>
+  <Opportunity dateCompleted="2014-04-14T11:13:40.900">
+    <Score measureOf="Overall" measureLabel="ScaleScore" value="245.174914080214" standardError="19.3617008392283" />
+    <Score measureOf="Overall" measureLabel="PerformanceLevel" value="2" standardError="15.123" />
+  </Opportunity>
+</TDSReport>

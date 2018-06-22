@@ -1,0 +1,15 @@
+sql:
+  common:
+    school:
+      findAll: >-
+        SELECT natural_id
+        FROM school
+        WHERE (1=:statewide or district_group_id in (:district_group_ids) or district_id in (:district_ids) or school_group_id in (:school_group_ids) or id in (:school_ids))
+
+    schoolYear:
+      findAll: >-
+        SELECT year FROM school_year ORDER BY year
+
+    subject:
+      findAllCodes: >-
+        SELECT code FROM subject

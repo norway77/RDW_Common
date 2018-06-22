@@ -1,0 +1,7 @@
+# Need this because shared modules don't have the spring framework properties defined internally
+spring:
+  datasource:
+    url: jdbc:mysql://${spring.datasource.url-server:localhost:3306}/${spring.datasource.url-schema:warehouse_test}?useSSL=false&useLegacyDatetimeCode=false&characterEncoding=utf8
+    username: root
+    password:
+    driverClassName: com.mysql.jdbc.Driver

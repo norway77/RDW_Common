@@ -15,7 +15,7 @@ apply plugin: 'io.spring.dependency-management'
 
 allprojects {
     group = 'org.opentestsystem.rdw.common'
-    version = '1.1.0-SNAPSHOT'
+    version = '1.2.0-SNAPSHOT'
 
     apply plugin: 'idea'
     apply plugin: 'propdeps'
@@ -43,18 +43,30 @@ subprojects {
   dependencyManagement {
     dependencies {
       // commonly used libraries
-      dependency 'com.google.guava:guava:21.0'
+      dependency 'com.google.code.gson:gson:2.8.5'
+      dependency 'com.google.guava:guava:23.0'
+      dependency 'commons-io:commons-io:2.6'
+      dependency 'org.apache.commons:commons-csv:1.5'
+      dependency 'org.apache.commons:commons-lang3:3.7'
+      dependency 'org.apache.commons:commons-text:1.3'
       dependency 'org.slf4j:slf4j-api:1.7+'
 
       // commonly used test libraries
-      dependency 'junit:junit:4.12+'
-      dependency 'org.assertj:assertj-core:3.6+'
-      dependency 'org.mockito:mockito-core:1.10+'
+      dependency 'junit:junit:4.12'
+      dependency 'org.assertj:assertj-core:3.6.2'
+      dependency 'org.mockito:mockito-core:2.16.0'
+
+      // Woodstox STAX2 XML stream processing API and required
+      // Sun Multi-Schema Validation libraries
+      dependency 'org.codehaus.woodstox:stax2-api:4.1'
+      dependency 'msv:msv:20050913'
+      dependency 'msv:xsdlib:20050913'
+      dependency 'xerces:xercesImpl:2.11.0'
     }
     imports {
       // make springframework versions consistent with other projects in the RDW suite
       mavenBom 'org.springframework.boot:spring-boot-dependencies:1.5.2.RELEASE'
-      mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Camden.SR5'
+      mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Camden.SR7'
     }
   }
 

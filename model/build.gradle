@@ -1,2 +1,14 @@
-dependencies {       
+import org.gradle.internal.jvm.Jvm
+
+dependencies {
+    compile 'com.fasterxml.jackson.core:jackson-annotations'
+    compile 'com.fasterxml.jackson.core:jackson-databind'
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+    compile 'org.codehaus.woodstox:stax2-api'
+    compile 'msv:msv'
+    compile 'msv:xsdlib'
+    compile 'xerces:xercesImpl'
+
+    runtime files(Jvm.current().toolsJar)
 }
