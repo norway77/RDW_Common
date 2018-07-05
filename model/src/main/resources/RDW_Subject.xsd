@@ -309,11 +309,12 @@
     <xs:complexType>
       <xs:sequence>
         <!--
-          Optional display icon for displaying when displaying this claim
+          Display icon for displaying when displaying scorable claims
           to users or generating reports.
           All free Font Awesome icons are available https://fontawesome.com/icons?d=gallery&m=free
+          NOTE: That the Icon element is required if this claim is scorable.
         -->
-        <xs:element minOccurs="0" name="Icon" type="xs:string"/>
+        <xs:element minOccurs="0" name="Icon" default="fa-pencil-square-o" type="xs:string"/>
         <!--
           Optional description for displaying this claim to users or
           generating reports.
