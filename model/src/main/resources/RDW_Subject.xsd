@@ -81,6 +81,12 @@
         If not provided, it will default to the "name" value.
       -->
       <xs:attribute name="longName" type="xs:string"/>
+      <!--
+        This is an optional flag that controls whether the target report for the assessment type
+        should be enabled. If not provided, it will default to "true" for summative assessment
+        type and "false" for all other assessment types.
+      -->
+      <xs:attribute name="targetReport" type="xs:boolean"/>
     </xs:complexType>
   </xs:element>
 
