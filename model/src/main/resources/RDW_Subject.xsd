@@ -347,6 +347,10 @@
       -->
       <xs:attribute name="organizational" default="true" type="xs:boolean"/>
       <!--
+        Optional attribute declaring data order for scorable claims.
+      -->
+      <xs:attribute name="dataOrder" type="xs:integer"/>
+      <!--
         Optional attribute declaring display order when displaying
         scorable claims.  Claims will be displayed in ascending order.
       -->
