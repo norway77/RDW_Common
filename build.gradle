@@ -2,12 +2,10 @@ buildscript {
   repositories {
     mavenLocal()
     jcenter()
-    maven { url 'http://repo.spring.io/plugins-release' }
   }
   dependencies {
     classpath("io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE")
     classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.18.RELEASE")
-    classpath('org.springframework.build.gradle:propdeps-plugin:0.0.7')
   }
 }
 
@@ -18,9 +16,6 @@ allprojects {
     version = '1.4.0-SNAPSHOT'
 
     apply plugin: 'idea'
-    apply plugin: 'propdeps'
-    apply plugin: 'propdeps-maven'
-    apply plugin: 'propdeps-idea'
 
     if (project.hasProperty("buildNumber")) {
       project.setVersion(project.version.toString().replaceAll("SNAPSHOT", "${buildNumber}"))
