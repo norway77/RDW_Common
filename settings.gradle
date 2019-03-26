@@ -5,6 +5,7 @@ include ":model"
 include ":security"
 include ":status"
 include ":utils"
+include ":multi-tenant"
 
 // It is considered good practice to explicitly set the root project name
 rootProject.name = "rdw-common"
