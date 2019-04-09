@@ -1,6 +1,13 @@
+configurations {
+    testCompile.extendsFrom compileOnly
+}
+
 dependencies {
     compile 'org.springframework:spring-context'
-    compile 'org.springframework.boot:spring-boot-starter-jdbc'
-
+    compileOnly 'org.springframework.boot:spring-boot-starter-jdbc'
+    compileOnly 'org.springframework.boot:spring-boot-starter-web'
     testCompile 'org.springframework:spring-test'
+    testCompile('org.springframework.boot:spring-boot-starter-test') {
+        exclude(module: 'commons-logging')
+    }
 }
