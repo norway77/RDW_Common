@@ -1,5 +1,6 @@
 package scripts
 
+
 import org.apache.tools.ant.util.ReaderInputStream
 import org.jdom2.Document
 import org.jdom2.Element
@@ -11,11 +12,11 @@ import org.jdom2.transform.JDOMResult
 import org.jdom2.transform.JDOMSource
 import org.jdom2.xpath.XPathFactory
 import org.opentestsystem.rdw.ingest.script.PipelineScript
+import org.xml.sax.InputSource
 
 import javax.xml.transform.Transformer
 import javax.xml.transform.TransformerFactory
 import javax.xml.transform.stream.StreamSource
-
 /**
  * Base class for Groovy pipeline scriptClasses. Provides a DSL that will be available to the scriptClasses.
  */
@@ -30,7 +31,21 @@ abstract class DSLScriptBase extends PipelineScript {
      */
     @Override
     PipelineScript enableXmlExtensions() {
-        Document document = new SAXBuilder().build(getProperty("input"))
+        def input = getProperty("input")
+
+        if (input == null) {
+            throw new RuntimeException(" XML Input cannot be null")
+        }
+
+        if (input instanceof String) {
+            input = new StringReader(input)
+        } else if (input instanceof byte[]) {
+            input = new ByteArrayInputStream(input)
+        } else if (!(input instanceof InputStream || input instanceof Reader)) {
+            throw new RuntimeException("Unsupported input type: " + input.getClass())
+        }
+
+        Document document = new SAXBuilder().build(new InputSource(input))
 
         this.setProperty("document", document)
 
@@ -104,6 +119,26 @@ abstract class DSLScriptBase extends PipelineScript {
 
         // Converts the document object to a string. Typically this should be the last statement in a script.
         this.metaClass.getOutputXml {
+            print input.getClass()
+            if (input instanceof Reader) {
+                getOutputXmlAsString()
+            } else {
+                getOutputXmlAsByteArray()
+            }
+        }
+
+        this.metaClass.getOutputXmlAsByteArray {
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream()
+            new XMLOutputter().with {
+                format = Format.getRawFormat()
+                format.setLineSeparator(LineSeparator.NONE)
+                output(getProperty('document'), outputStream)
+            }
+
+            return outputStream.toByteArray()
+        }
+
+        this.metaClass.getOutputXmlAsString {
             StringWriter stringWriter = new StringWriter()
 
             new XMLOutputter().with {
