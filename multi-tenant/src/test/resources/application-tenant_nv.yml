@@ -1,0 +1,9 @@
+#simulating the spring cloud config search path feature with "tenant_nv" profile for testing purposes
+spring:
+  datasource:
+    tenants:
+      tenant_nv:
+        url-parts:
+          database: "tenant_nv"
+        username: "tenant_nv_user"
+        password: "tenant_nv_password"
