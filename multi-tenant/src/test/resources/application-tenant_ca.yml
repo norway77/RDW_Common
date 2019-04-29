@@ -1,4 +1,4 @@
-#simulating the spring cloud config search path feature with "tenant_nv" profile for testing purposes
+#simulating the spring cloud config search path feature with "tenant_ca" profile for testing purposes
 spring:
   datasource:
     tenants:
