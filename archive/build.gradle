@@ -2,6 +2,7 @@ dependencies {
     compile 'com.google.guava:guava'
     compile 'org.springframework:spring-core'
     compile 'org.springframework.cloud:spring-cloud-starter-aws'
+    compile project(':rdw-common-multi-tenant')
 
     testCompile 'org.springframework:spring-test'
     testRuntime 'org.springframework.boot:spring-boot-starter-test'
