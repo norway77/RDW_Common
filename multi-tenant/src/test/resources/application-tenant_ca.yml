@@ -8,3 +8,10 @@ spring:
         username: "tenant_ca_user"
         password: "tenant_ca_password"
         validationQueryTimeout: 50
+
+tenant:
+    id: ca-0000000000000000000
+    name: "California"
+    aws:
+      bucket: s3://new-bucket
+      object-prefix: "tenant_ca"

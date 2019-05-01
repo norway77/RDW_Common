@@ -31,3 +31,19 @@ spring:
     maxActive: 10
     minIdle: ${spring.datasource.initialSize}
     maxIdle: ${spring.datasource.maxActive}
+
+archive:
+  file:
+    root: file:///tmp/
+  aws:
+    access-key: bar
+    secret-key: baz
+    region: foo1
+    sse: bar2
+    bucket: s3://mybucket
+    object-prefix:
+  tenants:
+    ca:
+      aws:
+        bucket: s3://new-bucket
+        object-prefix: {$tenant.aws.object.object-prefix}
