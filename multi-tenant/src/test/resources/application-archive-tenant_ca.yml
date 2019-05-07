@@ -1,0 +1,6 @@
+tenant:
+  id: ca-00000000001234
+  full-name: "Califorina"
+  aws:
+    bucket: s3://new bucket
+    object-prefix: "tenant_ca"

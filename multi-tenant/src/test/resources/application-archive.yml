@@ -1,0 +1,17 @@
+#simulating the spring cloud config search path feature with "tenant_nv" profile for testing purposes
+
+archive:
+  file:
+    root: file:///tmp/
+  aws:
+    access-key: bar
+    secret-key: baz
+    region: foo1
+    sse: bar2
+    bucket: s3://mybucket
+    object-prefix:
+  tenants:
+    ca:
+      aws:
+        bucket: {$tenant.aws.bucket}
+        object-prefix: {$tenant.aws.object-prefix}
