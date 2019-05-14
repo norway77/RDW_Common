@@ -2,7 +2,7 @@
 spring:
   datasource:
     tenants:
-      tenant_nv:
+      NVX:
         url-parts:
           database: "tenant_nv"
         username: "tenant_nv_user"

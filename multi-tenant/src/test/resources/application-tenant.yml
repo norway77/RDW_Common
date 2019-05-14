@@ -3,7 +3,9 @@ tenant-properties:
   tenants:
     - id: CA
       key: CA
-      display-name: California
+      name: California
+      description: Some Descriptive Text For CA
     - id: NV
       key: NVX #To verify id and key need not match
-      display-name: Nevada
+      name: Nevada
+      description: Some Descriptive Text For NV

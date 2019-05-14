@@ -2,7 +2,7 @@
 spring:
   datasource:
     tenants:
-      tenant_ca:
+      CA:
         url-parts:
           database: "tenant_ca"
         username: "tenant_ca_user"
