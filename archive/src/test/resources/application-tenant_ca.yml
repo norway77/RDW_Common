@@ -1,0 +1,8 @@
+archive:
+  tenants:
+    CA:
+      uri-root: "s3://ca-archive"
+      path-prefix: "ca"
+      s3-access-key: testaccesskey
+      s3-secret-key: testkey
+      s3-sse: test

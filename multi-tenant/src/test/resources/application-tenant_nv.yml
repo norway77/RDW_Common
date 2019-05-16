@@ -7,3 +7,9 @@ spring:
           database: "tenant_nv"
         username: "tenant_nv_user"
         password: "tenant_nv_password"
+
+archive:
+  tenants:
+    NVX:
+      uri-root: "file://tmp"
+      path-prefix: "/nv"

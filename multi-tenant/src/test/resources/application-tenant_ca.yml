@@ -8,3 +8,8 @@ spring:
         username: "tenant_ca_user"
         password: "tenant_ca_password"
         validationQueryTimeout: 50
+archive:
+  tenants:
+    CA:
+      uri-root: "s3://ca-archive"
+      path-prefix: "/ca"

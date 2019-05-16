@@ -1,0 +1,6 @@
+#simulating the spring cloud config search path feature with "tenant_nv" profile for testing purposes
+archive:
+  tenants:
+    NVX:
+      uri-root: "file://tmp"
+      path-prefix: "nv"

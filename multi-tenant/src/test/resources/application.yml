@@ -34,3 +34,11 @@ spring:
     removeAbandoned: false
     removeAbandonedTimeout: 60
     logAbandoned: false
+#not actually testing s3/file access using for testing resolver
+archive:
+  #uri-root: (testing null at root)
+  #path-prefix (testing null at root)
+  s3-access-key: testkey
+  s3-secret-key: testsecret
+  s3-region-static: us-west-2
+  s3-sse: testsse
