@@ -27,6 +27,8 @@ import java.nio.charset.StandardCharsets
  */
 abstract class DSLScriptBase extends PipelineScript {
     static {
+        // Disable starting new threads from the script. They complicate error handling
+        // and might be used to bypass security restrictions.
         Thread.metaClass.start {throw new SecurityException("Illegal to start new thread from script")}
     }
 
