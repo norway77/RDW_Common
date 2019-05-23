@@ -26,6 +26,12 @@ import java.nio.charset.StandardCharsets
  * Base class for Groovy pipeline scripts. Provides a DSL that will be available to the scripts.
  */
 abstract class DSLScriptBase extends PipelineScript {
+    static {
+        // Disable starting new threads from the script. They complicate error handling
+        // and might be used to bypass security restrictions.
+        Thread.metaClass.start {throw new SecurityException("Illegal to start new thread from script")}
+    }
+
     // Collection of errors found by validating scripts.
     private DataElementErrorCollector errorCollector = new DataElementErrorCollector()
 
