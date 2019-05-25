@@ -1,3 +1,11 @@
+tenantProperties:
+  tenants:
+    CA:
+      id: CA
+      key: CA
+      name: California
+      description: Some Descriptive Text For CA
+
 archive:
   tenants:
     CA:
