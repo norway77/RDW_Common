@@ -1,8 +1,8 @@
 #not actually testing database access using for testing org.opentestsystem.rdw.multitenant.datasource.DataSourceElementsTenant
 logging:
   level:
-    org:
-      springframework: DEBUG
+    org.springframework: DEBUG
+    org.opentestsystem.rdw.multitenant: DEBUG
 
 spring:
   datasource:
