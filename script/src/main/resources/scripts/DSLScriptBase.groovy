@@ -1,5 +1,6 @@
 package scripts
 
+import org.apache.commons.io.IOUtils
 import org.jdom2.Document
 import org.jdom2.Element
 import org.jdom2.input.SAXBuilder
@@ -21,6 +22,8 @@ import javax.xml.transform.Transformer
 import javax.xml.transform.TransformerFactory
 import javax.xml.transform.stream.StreamSource
 import java.nio.charset.StandardCharsets
+
+import static java.nio.charset.StandardCharsets.UTF_8
 
 /**
  * Base class for Groovy pipeline scripts. Provides a DSL that will be available to the scripts.
@@ -144,6 +147,18 @@ abstract class DSLScriptBase extends PipelineScript {
         }
 
         throw new MissingPropertyException(name, this.class)
+    }
+
+    public InputStream resourceAsStream(String path) {
+        return getClass().getResourceAsStream(path)
+    }
+
+    public byte[] resourceAsBytes(String path) throws IOException {
+        return IOUtils.toByteArray(resourceAsStream(path))
+    }
+
+    public String resourceAsString(String path) throws IOException {
+        return IOUtils.toString(resourceAsStream(path), UTF_8)
     }
 
     // Convert string to ImportStatus enum value. Returns BAD_DATA if conversion fails.
