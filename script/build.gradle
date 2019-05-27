@@ -23,6 +23,7 @@ dependencies {
     // for @NotNull
     compile 'javax.validation:validation-api'
 
+    compile project(':rdw-common-archive')
     compile project(':rdw-common-utils')
     compile project(':rdw-common-model')
 
