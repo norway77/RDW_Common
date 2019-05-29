@@ -1,4 +1,8 @@
+import static org.opentestsystem.rdw.script.util.Tests.resourceAsString
+
 enable 'xml'
+
+def xslItemRulesOnly = resourceAsString("/xsl/exam_items_only.xsl")
 
 applyXsl xslItemRulesOnly
 
