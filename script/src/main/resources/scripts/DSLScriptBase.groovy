@@ -210,25 +210,7 @@ abstract class DSLScriptBase extends PipelineScript {
     private void enableCsvExtensions() {
         checkExtension('csv')
 
-        def input = getProperty("input")
-
-        if (input == null) {
-            throw new RuntimeException(" CSV Input cannot be null")
-        }
-
-        Reader reader
-
-        if (input instanceof String) {
-            reader = new StringReader(input)
-        } else if (input instanceof byte[]) {
-            reader = new InputStreamReader(new ByteArrayInputStream(input), UTF_8)
-        } else if (input instanceof InputStream) {
-            reader = new InputStreamReader(input, UTF_8)
-        } else if (input instanceof Reader) {
-            reader = input
-        } else {
-            throw new RuntimeException("Unsupported input type: " + input.getClass())
-        }
+        Reader reader = convertToReader(getProperty('input'))
 
         CSVFormat csvFormat = CSVFormat.RFC4180.withFirstRecordAsHeader().withCommentMarker('#' as char)
         StringWriter csvStringWriter = new StringWriter()
@@ -316,18 +298,12 @@ abstract class DSLScriptBase extends PipelineScript {
     private void enableXmlExtensions() {
         checkExtension('xml')
 
-        def input = getProperty("input")
-
+        // XML documents can have a character encoding in their declarations, which the parser will use
+        // if it can. (It will fall back to UTF-8 if no declaration is present.) To make this work
+        // we have to use an input stream for byte arrays. Strings are already encoded so a reader is correct.
+        def input = convertToInputStream(getProperty('input'))
         if (input == null) {
-            throw new RuntimeException(" XML Input cannot be null")
-        }
-
-        if (input instanceof String) {
-            input = new StringReader(input)
-        } else if (input instanceof byte[]) {
-            input = new ByteArrayInputStream(input)
-        } else if (!(input instanceof InputStream || input instanceof Reader)) {
-            throw new RuntimeException("Unsupported input type: " + input.getClass())
+            input = convertToReader(getProperty('input'))
         }
 
         Document document = new SAXBuilder().build(new InputSource(input))
@@ -449,5 +425,33 @@ abstract class DSLScriptBase extends PipelineScript {
 
             setProperty('document', out.document)
         }
+    }
+
+    private Reader convertToReader(Object input) {
+        if (input == null) {
+            throw new RuntimeException("Input cannot be null")
+        }
+
+        if (input instanceof String) {
+            return new StringReader(input)
+        } else if (input instanceof byte[]) {
+            return new InputStreamReader(new ByteArrayInputStream(input), UTF_8)
+        } else if (input instanceof InputStream) {
+            return new InputStreamReader(input, UTF_8)
+        } else if (input instanceof Reader) {
+            return input
+        }
+
+        throw new RuntimeException("Unsupported input type: " + input.getClass())
+    }
+
+    private InputStream convertToInputStream(Object input) {
+        if (input instanceof byte[]) {
+            return new ByteArrayInputStream(input)
+        } else if (input instanceof InputStream) {
+            return input
+        }
+
+        return null
     }
 }
