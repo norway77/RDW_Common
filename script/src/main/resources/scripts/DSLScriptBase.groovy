@@ -1,5 +1,9 @@
 package scripts
 
+
+import org.apache.commons.csv.CSVFormat
+import org.apache.commons.csv.CSVParser
+import org.apache.commons.csv.CSVPrinter
 import org.apache.commons.io.IOUtils
 import org.jdom2.Document
 import org.jdom2.Element
@@ -10,12 +14,12 @@ import org.jdom2.output.XMLOutputter
 import org.jdom2.transform.JDOMResult
 import org.jdom2.transform.JDOMSource
 import org.jdom2.xpath.XPathFactory
-import org.opentestsystem.rdw.common.model.ImportStatus
 import org.opentestsystem.rdw.common.model.ImportException
+import org.opentestsystem.rdw.common.model.ImportStatus
+import org.opentestsystem.rdw.script.PipelineScript
 import org.opentestsystem.rdw.utils.DataElementError
 import org.opentestsystem.rdw.utils.DataElementErrorCollector
 import org.opentestsystem.rdw.utils.ParserHelper
-import org.opentestsystem.rdw.script.PipelineScript
 import org.xml.sax.InputSource
 
 import javax.xml.transform.Transformer
@@ -32,7 +36,7 @@ abstract class DSLScriptBase extends PipelineScript {
     static {
         // Disable starting new threads from the script. They complicate error handling
         // and might be used to bypass security restrictions.
-        Thread.metaClass.start {throw new SecurityException("Illegal to start new thread from script")}
+        Thread.metaClass.start { throw new SecurityException("Illegal to start new thread from script") }
     }
 
     // Collection of errors found by validating scripts.
@@ -40,6 +44,8 @@ abstract class DSLScriptBase extends PipelineScript {
 
     // Parser Helper wrapping error collector
     private ParserHelper parserHelper = new ParserHelper(errorCollector)
+
+    private final List<String> enabledExtensions = new ArrayList<>();
 
     /**
      * Returns original input if no errors have been found, otherwise throws ImportException.
@@ -70,7 +76,7 @@ abstract class DSLScriptBase extends PipelineScript {
      * in as a string. This should match (case-insensitive) one of names in the ImportStatus enum.
      *
      * @param statusString string matching one of the Import Status enums.
-     * @return see {@link #getCheckValid(ImportStatus)}
+     * @return see{@link #getCheckValid(ImportStatus)}
      */
     Boolean checkValid(String statusString) {
         ImportStatus status = stringToImportStatus(statusString)
@@ -181,31 +187,123 @@ abstract class DSLScriptBase extends PipelineScript {
     void enable(String type) {
         if ('xml'.equalsIgnoreCase(type)) {
             enableXmlExtensions()
+        } else if ('csv'.equalsIgnoreCase(type)) {
+            enableCsvExtensions()
         } else {
             throw new RuntimeException("Unsupported extension type: " + type)
         }
     }
 
-    /**
-     * Adds XML parsing, transformation, formatting helper methods to the script class.
-     *
-     * See readme for specific examples of using these helper methods.
-     *
-     * @return reference to the script class (for chained calls).
-     */
-    private void enableXmlExtensions() {
-        def input = getProperty("input")
+    // Checks that incompatible extensions not enabled for same script
+    private void checkExtension(String type) {
+        // There are only two extensions now, so just check that no other extension has already been enabled.
+        if (enabledExtensions.isEmpty()) {
+            enabledExtensions.add(type)
+        } else if (!(enabledExtensions.size() == 1 && enabledExtensions.contains(type))) {
+            throw new RuntimeException("Cannot enable " + type +
+                    " extensions. Only one extension can be enabled for a script.")
+        }
+    }
 
-        if (input == null) {
-            throw new RuntimeException(" XML Input cannot be null")
+    //  Adds CSV parsing and transformation helper methods to the script class.
+    //  See readme for specific examples of using these helper methods.
+    private void enableCsvExtensions() {
+        checkExtension('csv')
+
+        Reader reader = convertToReader(getProperty('input'))
+
+        CSVFormat csvFormat = CSVFormat.RFC4180.withFirstRecordAsHeader().withCommentMarker('#' as char)
+        StringWriter csvStringWriter = new StringWriter()
+        CSVPrinter csvPrinter = new CSVPrinter(csvStringWriter, csvFormat)
+        boolean transformed = false
+
+        CSVParser csvParser = csvFormat.parse(reader)
+
+        Map<String,Integer> headerMap = csvParser.getHeaderMap()
+
+        this.setProperty('csvParser', csvParser)
+
+        // Transformation for rows of the CSV input, which is assumed to begin with a header with no duplication
+        // in header names. Each row is transformed by the defined rule, which can perform one or more
+        // transformations on the row's contents or delete the row entirely.
+        this.metaClass.transformRows {rule ->
+            transformed = true
+            csvPrinter.printRecord(csvParser.getHeaderMap().keySet())
+            if (rule instanceof Closure) {
+                csvParser.each {
+                    this.currentRowDeleted = false
+
+                    if (it.getComment() != null && it.getComment().length() > 0) {
+                        csvPrinter.printComment(it.getComment())
+                    }
+                    Map values = it.toMap()
+
+                    // Add the ability to delete the row from the CSV output
+                    values.getMetaClass().delete {
+                        this.currentRowDeleted = true
+                    }
+
+                    // Treat the row values as properties based on the column header. Error if the requested
+                    // properties does not exist in the column headers.
+                    values.getMetaClass().setProperty {property, value ->
+                        if (!headerMap.containsKey(property)) {
+                            throw new IllegalArgumentException('[' + property + '] not contained in CSV headers')
+                        }
+                        delegate.put(property, value)
+                    }
+                    values.getMetaClass().getProperty {property ->
+                        if (!headerMap.containsKey(property)) {
+                            throw new IllegalArgumentException('[' + property + '] not contained in CSV headers')
+                        }
+                        delegate.get(property)
+                    }
+
+                    rule(values)
+
+                    if (!this.currentRowDeleted) {
+                        csvPrinter.printRecord(orderValues(values, headerMap.keySet()))
+                    }
+                }
+            }
+            csvParser.close()
+
+
+            return this.getOutputCsv()
         }
 
-        if (input instanceof String) {
-            input = new StringReader(input)
-        } else if (input instanceof byte[]) {
-            input = new ByteArrayInputStream(input)
-        } else if (!(input instanceof InputStream || input instanceof Reader)) {
-            throw new RuntimeException("Unsupported input type: " + input.getClass())
+        // Outputs the transformed CSV as a string, or just returns the input value if no transformations
+        // exist in the script.
+        this.metaClass.getOutputCsv {
+            if (!transformed) {
+                return input
+            }
+
+            csvPrinter.flush()
+            return csvStringWriter.toString()
+        }
+
+        // Auxiliary method needed to put row values in order. The CSVRecord only provides these as an
+        // unsorted map. The header map does return its keyset in the correct order.
+        this.metaClass.orderValues {values, headers ->
+            List<String> orderedValues = new ArrayList<>(headers.size())
+            for (String header : headers) {
+                orderedValues.add(values.get(header))
+            }
+            return orderedValues
+        }
+    }
+
+    // Adds XML parsing, transformation, formatting helper methods to the script class.
+    // See readme for specific examples of using these helper methods.
+    private void enableXmlExtensions() {
+        checkExtension('xml')
+
+        // XML documents can have a character encoding in their declarations, which the parser will use
+        // if it can. (It will fall back to UTF-8 if no declaration is present.) To make this work
+        // we have to use an input stream for byte arrays. Strings are already encoded so a reader is correct.
+        def input = convertToInputStream(getProperty('input'))
+        if (input == null) {
+            input = convertToReader(getProperty('input'))
         }
 
         Document document = new SAXBuilder().build(new InputSource(input))
@@ -327,5 +425,33 @@ abstract class DSLScriptBase extends PipelineScript {
 
             setProperty('document', out.document)
         }
+    }
+
+    private Reader convertToReader(Object input) {
+        if (input == null) {
+            throw new RuntimeException("Input cannot be null")
+        }
+
+        if (input instanceof String) {
+            return new StringReader(input)
+        } else if (input instanceof byte[]) {
+            return new InputStreamReader(new ByteArrayInputStream(input), UTF_8)
+        } else if (input instanceof InputStream) {
+            return new InputStreamReader(input, UTF_8)
+        } else if (input instanceof Reader) {
+            return input
+        }
+
+        throw new RuntimeException("Unsupported input type: " + input.getClass())
+    }
+
+    private InputStream convertToInputStream(Object input) {
+        if (input instanceof byte[]) {
+            return new ByteArrayInputStream(input)
+        } else if (input instanceof InputStream) {
+            return input
+        }
+
+        return null
     }
 }
